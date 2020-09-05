@@ -1,0 +1,86 @@
+.form{
+    margin: 50px 100px ;
+    border: 2px solid #8b8787;
+    width: 700px;
+    max-height: 700px;
+    padding: 30px;
+}
+.radio input { 
+    display: none; /* Прячем исходный переключатель */ 
+}
+.radio span {
+    position: relative; /* Относительное позиционирование */
+    display: inline-block; /* Строчно-блочный элемент */
+    width: 25px; height: 25px; /* Размеры */
+    background: #F5F5F5; /* Серый цвет фона */
+    border-radius: 50%; /* Круглый переключатель */
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5); /* Тень внутри */
+    margin: 0 10px;
+   }
+.radio input:checked + span { 
+    background: #fac228; /* Красный цвет фона */
+}
+p label {
+    font-size: 25px;
+    margin: 5px 20px ;
+}
+.email_comment{
+    width: 400px;
+    margin-bottom: 10px;
+}
+#textarea{
+    max-height: 160px;
+    margin-bottom: 10px;
+}
+
+
+#div
+{
+    padding:10px;
+    width:235px;
+    border: 1px solid black;
+}
+
+#table{
+  table-layout: fixed;
+   width: 100%;
+   height:200px;
+   border: 1px solid black;
+   margin-top:15px;
+}
+td{
+    border: 1px solid black; padding:10px;
+    vertical-align: top;
+}
+.Btn{
+    width: 80px;
+}
+
+.list_comments{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 50px;
+    padding: 20px;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 400px;
+    max-height: 300px;
+    background-color: rgb(240, 219, 102);
+    border-radius: 20px;
+}
+.title_comment{
+    text-align: center;
+}
+.asses_comment{
+    color: #ec5712
+}
+.date_comment{
+    text-align: right;
+
+}

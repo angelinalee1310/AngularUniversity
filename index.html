@@ -1,0 +1,51 @@
+<!DOCTYPE html> <!-- Объявление формата документа -->
+<html>
+    <head> <!-- Техническая информация о документе -->
+        <meta charset="UTF-8"> <!-- Определяем кодировку символов документа -->
+        <title></title> <!-- Задаем заголовок документа -->
+        <link rel="stylesheet" href="style.css"> <!-- Подключаем внешнюю таблицу стилей -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body>
+        <form class="form" name="theForm">
+ 
+            <p><strong>E-mail:</strong></p>
+            <input 
+            type="email" 
+            name="email" 
+            class="email_comment field" 
+            id="email_comment"
+            onblur="if(this.value.length == 0) this.value = 'name@example.com'" 
+            onfocus="if(this.value == 'name@example.com') this.value = '' "
+            >
+            <p id="error_email"></p>
+            <p><strong>Your сomment:</strong></p>
+            <textarea 
+            name="textarea" 
+            cols="70" 
+            rows="3" 
+            class="textarea field"
+            id="textarea"
+            onblur="if(this.value.length == 0) this.value = 'some text'" 
+            onfocus="if(this.value == 'some text') this.value=''"
+            ></textarea>
+            <p id="error_message"></p>
+            <p><strong>Your assesment:</strong></p>
+            <p>
+                <label class="radio"><input type="radio" name="g" value="1" ><span></span>1</label>
+                <label class="radio"><input type="radio" name="g" value="2" ><span></span>2</label>
+                <label class="radio"><input type="radio" name="g" value="3" ><span></span>3</label>
+                <label class="radio"><input type="radio" name="g" value="4" ><span></span>4</label>
+                <label class="radio"><input type="radio" name="g" value="5" ><span></span>5</label>
+            </p>
+            <p id="error_radio"></p>
+            <input type="submit" class="Btn" value="Sent">
+
+        </form>
+
+
+        <div class="list_comments" id="list_comments"></div>
+    
+        <script src="script.js"></script>
+    </body>
+</html>
